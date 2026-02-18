@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Simple School Management</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Simple School Management (Demo)</h1>
+      <nav>
+        <button data-target="enrol">Enrol</button>
+        <button data-target="fees">Fees</button>
+        <button data-target="courses">Courses</button>
+        <button data-target="staff">Staff</button>
+        <button data-target="results">Results</button>
+      </nav>
+    </header>
+
+    <main>
+      <section id="enrol" class="panel">
+        <h2>Enrol Student</h2>
+        <form id="enrolForm">
+          <input name="name" placeholder="Full name" required>
+          <input name="studentId" placeholder="Student ID" required>
+          <input name="className" placeholder="Class" required>
+          <button type="submit">Enrol</button>
+        </form>
+        <div class="list" id="studentsList"></div>
+      </section>
+
+      <section id="fees" class="panel hidden">
+        <h2>Record Fee Payment</h2>
+        <form id="feeForm">
+          <select name="studentId" id="feeStudent"></select>
+          <input name="amount" type="number" placeholder="Amount" required>
+          <input name="date" type="date" required>
+          <button type="submit">Record Fee</button>
+        </form>
+        <div class="list" id="feesList"></div>
+      </section>
+
+      <section id="courses" class="panel hidden">
+        <h2>Course Management</h2>
+        <form id="courseForm">
+          <input name="code" placeholder="Course code" required>
+          <input name="title" placeholder="Course title" required>
+          <button type="submit">Add Course</button>
+        </form>
+        <div class="list" id="coursesList"></div>
+      </section>
+
+      <section id="staff" class="panel hidden">
+        <h2>Staff Records</h2>
+        <form id="staffForm">
+          <input name="name" placeholder="Staff name" required>
+          <input name="role" placeholder="Role" required>
+          <button type="submit">Add Staff</button>
+        </form>
+        <div class="list" id="staffList"></div>
+      </section>
+
+      <section id="results" class="panel hidden">
+        <h2>Record / Share Results</h2>
+        <form id="resultForm">
+          <select name="studentId" id="resultStudent"></select>
+          <input name="course" placeholder="Course code" required>
+          <input name="grade" placeholder="Grade" required>
+          <button type="submit">Save Result</button>
+        </form>
+        <div class="list" id="resultsList"></div>
+        <button id="exportResults">Export Results (JSON)</button>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+<html>
+<head>
+    <title>My Web Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Web Page</h1>
+    <p>This is a simple web page created as an example.</p>
+</body>
+</html>
