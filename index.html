@@ -8,7 +8,14 @@
   </head>
   <body>
     <header>
-      <h1>Simple School Management (Demo)</h1>
+      <h1>Simple School Management</h1>
+      <div id="tenantControls" class="tenant-controls">
+        <label for="tenantSelect">School:</label>
+        <select id="tenantSelect"></select>
+        <input id="newTenantName" placeholder="New school name">
+        <button id="createTenant">Create</button>
+        <span id="currentTenantName" class="muted"></span>
+      </div>
       <nav>
         <button data-target="enrol">Enrol</button>
         <button data-target="fees">Fees</button>
